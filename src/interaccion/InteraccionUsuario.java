@@ -61,7 +61,7 @@ public class InteraccionUsuario {
                 DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                 resultado.setFecha(fechaHora.format(formatoFecha));
 
-
+                // para que el resultado se muestre en consola
                 Gson gson = new Gson();
                 String jsonResultado = gson.toJson(resultado);
                 System.out.println("\n Conversión en formato JSON:");

@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 public class ConsultaAAPI {
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/65829290a11151c421f0e299/latest/";
 
-    // ✅ Método para obtener todas las tasas de conversión desde la API
+    // Método para obtener todas las tasas de conversión desde la API
     public JsonObject obtenerTasa(String monedaBase) {
         String url = API_URL + monedaBase;
         URI direccion = URI.create(url);
